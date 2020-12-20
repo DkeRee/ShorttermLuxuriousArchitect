@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color: grey;
+		}
+
+		div#container {
+			width: 2010px;
+			text-align: center;
+			border-radius: 15px;
+		}
+
+		h1#title {
+			font-size: 100px;
+		}
+
+		div#header {
+			background-image: url("backgroundNew.jpg");
+			background-repeat: no-repeat;
+			border-radius: 15px;
+			height: 300px;
+			width: 2000px;
+		}
+
+		div#second-body {
+			background-color: white;
+			border-radius: 15px;
+			height: 600px;
+			width: 2000px;
+		}
+
+		textarea#blog-textarea {
+			width: 1000px;
+			height: 100px;
+			padding: 15px;
+			border-color: grey;
+			border-radius: 15px;
+			text-align: center;
+		}
+
+		button#edit-button {
+			cursor: pointer;
+			background-color: rgb(0, 255, 0);
+			text-align: center;
+			border-radius: 30px;
+			width: 50px;
+			height: 50px;
+		}
+
+
+		button#save-button {
+			cursor: pointer;
+			background-color: rgb(135,206,250);
+			text-align: center;
+			border-radius: 30px;
+			width: 50px;
+			height: 50px;
+		}
+
+		div#blog-content {
+			border-radius: 15px;
+			text-align: center;
+		}
+
+		.text {
+			text-align: center;
+		}
+
+		.blog {
+			text-align: center;
+			border-radius: 15px;
+			border: 2px solid red;
+			background-color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div id = "container">
+		<div id = "header">
+			<center>
+				<br>
+			<h1 id = "title" style = "font-family: 'Verdana'">My Blog</h1>
+			</center>
+		</div>
+		<center>
+			<div id = "blog-content">
+			</div>
+		</center>
+		<div id = "second-body">
+			<center>
+				<br>
+				<br>
+				<br>
+			<textarea id = "blog-textarea" style = "resize: none" placeholder = "Type your blog here!" readonly></textarea>
+				<br>
+				<br>
+			<button id = "edit-button" style = "display:block">Edit</button>
+			<button id = "save-button" style = "display:none">Save</button>
+			</center>
+		</div>
+	</div>
+<script src = "websiteConnector.js"></script>
+</body>
+</html>
